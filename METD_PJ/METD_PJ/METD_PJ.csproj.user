@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Desenvolvimento\Desktop\facul\winfomrs\METD_PJ\METD_PJ\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="html-resources\pages\disciplines.html">
+      <SubType>Component</SubType>
+    </None>
+    <None Update="html-resources\scripts\menu.js">
+      <SubType>Component</SubType>
+    </None>
+    <None Update="html-resources\styles\disciplines.css">
+      <SubType>Component</SubType>
+    </None>
+  </ItemGroup>
+</Project>

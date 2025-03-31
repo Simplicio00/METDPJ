@@ -1,0 +1,63 @@
+﻿.centred-elements {
+    width: 550px;        
+    display: flex;
+    flex-wrap:wrap;
+    align-items:start;
+}
+
+.centred-btns{
+    width:500px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:10px;
+}
+
+.centred-btns button{  
+  background-color: black;
+  color: #ffffff;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.box-element{
+    background-color: lightgray;
+    height:150px;
+    width: 150px;
+    margin:10px;
+    box-sizing:border-box;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.box-element img{
+    width:100px;
+}
+
+.remove-icon{
+    height:20px;
+    width:20px;
+    box-sizing:border-box;
+    position:relative;
+    bottom:1px;
+    right:1px;
+}
+
+.remove-icon img{
+    width:10px;
+}
+
+.remove-icon:hover{
+    background-color:red;
+}
+
