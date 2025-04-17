@@ -9,13 +9,13 @@ let _disciplinas_adicionar = []
 
 // Função para receber a lista de disciplinas
 function receberListaDisciplinas(disciplina) {
-    _disciplinas = disciplina.map(dsc => dsc.Name);
+    _disciplinas = disciplina.map(dsc => dsc.Name + " (" + dsc.Id + ")");
     atualizarCentral()
 }
 
 // receber a lista de disciplinas não adicionadas
 function receberListaDisciplinasAdicionar(disciplina) {
-    _disciplinas_adicionar = disciplina.map(dsc => dsc.Name);
+    _disciplinas_adicionar = disciplina.map(dsc => dsc.Name + " (" + dsc.Id + ")");
     atualizarModal()
 }
 
@@ -36,6 +36,9 @@ function atualizarCentral() {
         //adicionando imagem de exclusao
         var remove_div = document.createElement("div")
         remove_div.className = "remove-icon"
+        remove_div.id = "i-remove-icon"
+        remove_div.onclick = function (e) { delete_dsp_curso(e.target) }
+
         var remove_div_img = document.createElement("img");
         remove_div_img.setAttribute("src", "C:/Users/Desenvolvimento/Desktop/facul/winfomrs/METD_PJ/METD_PJ/html-resources/imgs/cross_icon.png");
         remove_div.appendChild(remove_div_img)
@@ -53,7 +56,14 @@ function atualizarCentral() {
         newElement.appendChild(discipline_title)
 
         document.getElementsByClassName("centred-elements")[0].appendChild(newElement)
+
     }
+}
+
+function delete_dsp_curso(target) {
+    var discipline_name = target.parentElement.lastChild.innerText;
+    var selectedOption = document.getElementById('dropdown1').value;
+    cefCustom.delete_disciplina_curso(selectedOption, discipline_name); 
 }
 
 function atualizarModal() {

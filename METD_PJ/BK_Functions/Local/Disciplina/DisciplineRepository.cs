@@ -37,5 +37,32 @@ namespace BK_Functions.Local.Disciplina
             return list;
         }
 
+        public void PostDisciplineIntoCourse(int disciplinaid, int cursoid)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(DbCreate.dbPath))
+            {
+                conn.Open();
+
+                string query = "insert into Discipline_Course (Discipline_Id, Course_Id, Rg_DT) values (" + disciplinaid + "," + cursoid + "," + $"'{DateTime.Now.Date.ToString("yyyy-MM-dd")}'" +")";
+                new SQLiteCommand(query, conn).ExecuteNonQuery();
+
+                conn.Close();
+            }
+        }
+
+
+        public void DeleteDisciplineFromCourse(int disciplinaid, int cursoid)
+        {
+            using (SQLiteConnection conn = new SQLiteConnection(DbCreate.dbPath))
+            {
+                conn.Open();
+
+                string query = "delete from Discipline_Course where Discipline_Id = " + disciplinaid + " and " + "Course_Id = " + cursoid;
+                new SQLiteCommand(query, conn).ExecuteNonQuery();
+
+                conn.Close();
+            }
+        }
+
     }
 }

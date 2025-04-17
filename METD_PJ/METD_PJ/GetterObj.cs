@@ -3,6 +3,7 @@ using BK_Functions.Local.Disciplina;
 using BK_Functions.Models;
 using CefSharp;
 using CefSharp.WinForms;
+using METD_PJ.Extensions;
 using Newtonsoft.Json;
 using System;
 using System.Collections;
@@ -20,7 +21,7 @@ namespace METD_PJ
         public ChromiumWebBrowser? chromeBrowser;
         ICourseRepository? courseRepository;
         IDisciplineRepository? disciplineRepository;
-        
+
         public GetterObj(ChromiumWebBrowser chromeBrowser)
         {
             this.chromeBrowser = chromeBrowser;
@@ -92,6 +93,48 @@ namespace METD_PJ
             {
                 chromeBrowser.EvaluateScriptAsync($"limparDisciplinas();");
             }
+        }
+
+        public void post_disciplina_curso(string curso, string disciplina)
+        {
+            if (disciplina.Trim().IsVazio())
+            {
+                MessageBox.Show("CURSO OU DISCIPLINA INEXISTE");
+                return;
+            }
+
+            var result = MessageBox.Show($"Adicionar '{disciplina.ToUpper()}' ao curso '{curso.ToUpper()}'?", "SISTEMA", MessageBoxButtons.OKCancel);
+
+            if (result is DialogResult.OK)
+            {
+                disciplineRepository?.PostDisciplineIntoCourse(disciplina.GetId(), curso.GetId());
+                get_Disciplinas(curso);
+                get_Disciplinas_Curso(curso);
+                MessageBox.Show("Adicionado com sucesso!");
+            }
+        }
+
+        public void delete_disciplina_curso(string curso, string disciplina)
+        {
+            if (disciplina.IsVazio())
+            {
+                return;
+            }
+
+            var result = MessageBox.Show($"Remover a '{disciplina.ToUpper()}' do curso '{curso.ToUpper()}'?", "SISTEMA", MessageBoxButtons.OKCancel);
+            
+            try
+            {
+                if (result is DialogResult.OK)
+                {
+                    disciplineRepository?.DeleteDisciplineFromCourse(disciplina.GetId(), curso.GetId());
+                    MessageBox.Show("A disciplina foi removida com êxito!");
+                }
+            }
+            catch (Exception){}
+            
+            get_Disciplinas(curso);
+            get_Disciplinas_Curso(curso);
         }
 
         public void get_Filtro_Geral()

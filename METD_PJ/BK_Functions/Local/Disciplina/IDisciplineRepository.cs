@@ -10,5 +10,7 @@ namespace BK_Functions.Local.Disciplina
     public interface IDisciplineRepository
     {
         List<DisciplineModel> Get();
+        void PostDisciplineIntoCourse(int disciplinaid, int cursoid);
+        void DeleteDisciplineFromCourse(int disciplinaid, int cursoid);
     }
 }

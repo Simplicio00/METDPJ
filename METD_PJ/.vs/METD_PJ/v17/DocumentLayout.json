@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Desenvolvimento\\Desktop\\facul\\winfomrs\\METD_PJ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00812D46-02F6-48E7-A48F-36958B96BE6D}|METD_PJ\\METD_PJ.csproj|c:\\users\\desenvolvimento\\desktop\\facul\\winfomrs\\metd_pj\\metd_pj\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00812D46-02F6-48E7-A48F-36958B96BE6D}|METD_PJ\\METD_PJ.csproj|solutionrelative:metd_pj\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00812D46-02F6-48E7-A48F-36958B96BE6D}|METD_PJ\\METD_PJ.csproj|c:\\users\\desenvolvimento\\desktop\\facul\\winfomrs\\metd_pj\\metd_pj\\html-resources\\scripts\\regular_modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{00812D46-02F6-48E7-A48F-36958B96BE6D}|METD_PJ\\METD_PJ.csproj|solutionrelative:metd_pj\\html-resources\\scripts\\regular_modal.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00812D46-02F6-48E7-A48F-36958B96BE6D}|METD_PJ\\METD_PJ.csproj|c:\\users\\desenvolvimento\\desktop\\facul\\winfomrs\\metd_pj\\metd_pj\\html-resources\\pages\\disciplines.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00812D46-02F6-48E7-A48F-36958B96BE6D}|METD_PJ\\METD_PJ.csproj|solutionrelative:metd_pj\\html-resources\\pages\\disciplines.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00812D46-02F6-48E7-A48F-36958B96BE6D}|METD_PJ\\METD_PJ.csproj|c:\\users\\desenvolvimento\\desktop\\facul\\winfomrs\\metd_pj\\metd_pj\\getterobj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00812D46-02F6-48E7-A48F-36958B96BE6D}|METD_PJ\\METD_PJ.csproj|solutionrelative:metd_pj\\getterobj.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Desenvolvimento\\Desktop\\facul\\winfomrs\\METD_PJ\\METD_PJ\\Form1.cs",
-              "RelativeDocumentMoniker": "METD_PJ\\Form1.cs",
-              "ToolTip": "C:\\Users\\Desenvolvimento\\Desktop\\facul\\winfomrs\\METD_PJ\\METD_PJ\\Form1.cs",
-              "RelativeToolTip": "METD_PJ\\Form1.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
+              "Title": "regular_modal.js",
+              "DocumentMoniker": "C:\\Users\\Desenvolvimento\\Desktop\\facul\\winfomrs\\METD_PJ\\METD_PJ\\html-resources\\scripts\\regular_modal.js",
+              "RelativeDocumentMoniker": "METD_PJ\\html-resources\\scripts\\regular_modal.js",
+              "ToolTip": "C:\\Users\\Desenvolvimento\\Desktop\\facul\\winfomrs\\METD_PJ\\METD_PJ\\html-resources\\scripts\\regular_modal.js",
+              "RelativeToolTip": "METD_PJ\\html-resources\\scripts\\regular_modal.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-17T17:17:45.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "disciplines.html",
+              "DocumentMoniker": "C:\\Users\\Desenvolvimento\\Desktop\\facul\\winfomrs\\METD_PJ\\METD_PJ\\html-resources\\pages\\disciplines.html",
+              "RelativeDocumentMoniker": "METD_PJ\\html-resources\\pages\\disciplines.html",
+              "ToolTip": "C:\\Users\\Desenvolvimento\\Desktop\\facul\\winfomrs\\METD_PJ\\METD_PJ\\html-resources\\pages\\disciplines.html",
+              "RelativeToolTip": "METD_PJ\\html-resources\\pages\\disciplines.html",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-17T17:12:42.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetterObj.cs",
+              "DocumentMoniker": "C:\\Users\\Desenvolvimento\\Desktop\\facul\\winfomrs\\METD_PJ\\METD_PJ\\GetterObj.cs",
+              "RelativeDocumentMoniker": "METD_PJ\\GetterObj.cs",
+              "ToolTip": "C:\\Users\\Desenvolvimento\\Desktop\\facul\\winfomrs\\METD_PJ\\METD_PJ\\GetterObj.cs",
+              "RelativeToolTip": "METD_PJ\\GetterObj.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T12:37:18.486Z",
+              "WhenOpened": "2025-04-16T00:46:07.473Z",
               "EditorCaption": ""
             }
           ]

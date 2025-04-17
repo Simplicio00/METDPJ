@@ -6,16 +6,22 @@
                 </div>
                 <div class="modal-body">
                     <select id="dropdown_modal" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
-                    <option>Selecione</option>
                     </select>
                 </div>
                 <div class="modal-footer">
                     <!-- Input e Botão -->
                     <!--<input type="text" id="inputField" placeholder="Digite algo..." />-->
-                    <button onclick="cadastro()">Adicionar</button>
+                    <button onclick="cadastro_disciplina_no_curso()">Adicionar</button>
                 </div>
             </div>
 `)
+
+function cadastro_disciplina_no_curso() {
+    var curso = document.getElementById('dropdown1').value;
+    var disciplina = document.getElementById('dropdown_modal').value;
+
+    cefCustom.post_disciplina_curso(curso, disciplina);
+}
 
 function open_Modal_Add_Discipline_Curso() {
     document.getElementsByClassName('content')[0].classList.add('blurred');
@@ -47,7 +53,7 @@ _contentElement.addEventListener('click', function (event) {
     if (event.target === _contentElement) {
             close_Modal_Discipline_Curso();
     }
-});
+}); 
 
 
 _searchElement.childNodes.forEach(x => {
@@ -64,3 +70,4 @@ _searchElement.addEventListener('click', function (event) {
             close_Modal_Discipline_Curso();
     }
 });
+

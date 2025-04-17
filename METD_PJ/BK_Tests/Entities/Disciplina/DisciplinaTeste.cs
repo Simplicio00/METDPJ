@@ -36,7 +36,7 @@ namespace BK_Tests.Entities.Disciplina
         {
             try
             {
-                ////var values = _discipline.Post();
+                var values = _discipline.Post();
                 //Assert.That(values.Any());
             }
             catch (Exception)
